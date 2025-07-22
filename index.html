@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Blood Bank</title>
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <h4>بنك الدم</h4>
+                    <i class="fa-solid fa-hand-holding-droplet"></i>
+                </div>
+                <div class="header-links">
+                    <button class="btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="links">
+                        <li>الصفحة الرئيسية</li>
+                        <li>تواصل معنا</li>
+                        <li>معلومات عنا</li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">تسجيل الدخول</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing">
+        <div class="container">
+            <div class="info">
+                <h2>تبرع و انقذ حياة غيرك ...</h2>
+                <p>التبرع الواحد قادر على انقاذ حياة 3 اشخاص حياتهم في خطر ... كن بطل و انقذهم الآن</p>
+                <div class="btn">
+                    <button>كن متبرع</button>
+                    <button>طلب دم عاجل</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/donor.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end landing -->
+    <div class="information">
+        <div class="container">
+            <div class="counter">
+                <i class="fa-solid fa-users"></i>
+                <span>1</span>
+                <p>متبرع مسجل</p>
+            </div>
+            <div class="counter">
+                <i class="fa-solid fa-hand-holding-droplet"></i>
+                <span>0</span>
+                <p>عمليات التبرع</p>
+            </div>
+            <div class="counter">
+                <i class="fa-solid fa-hospital"></i>
+                <span>0</span>
+                <p>مستشفى شريكه</p>
+            </div>
+        </div>
+    </div>
+    <!-- start About Us -->
+    <div class="about-us">
+        <div class="container">
+            <div class="img">
+                <img src="images/bloodbank.png" alt="">
+            </div>
+            <div class="about">
+                <h2>عن بنك الدم :</h2>
+                <p>نحن منظمة غير ربحية تهدف إلى توفير الدم ومشتقاته للمرضى المحتاجين في جميع أنحاء البلاد. نعمل على بناء قاعدة بيانات للمتبرعين وتسهيل عملية التبرع بالدم</p>
+                <ul>
+                    <li>
+                        <div class="i"><i class="fa-solid fa-check"></i></div>
+                        <p>شبكة وطنية من المتبرعين</p>
+                    </li>
+                    <li>
+                        <div class="i"><i class="fa-solid fa-check"></i></div>
+                        <p>نظام تتبع آمن وفعال</p>
+                    </li>
+                    <li>
+                        <div class="i"><i class="fa-solid fa-check"></i></div>
+                        <p>استجابة سريعة للطلبات العاجلة</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start How Donor -->
+    <div class="how-donor">
+        <div class="container">
+            <h2>كيفية التبرع بالدم</h2>
+            <p>عملية التبرع بالدم بسيطة وآمنة وتستغرق أقل من ساعة من وقتك</p>
+            <div class="info">
+                <i class="fa-solid fa-user-pen"></i>
+                <h4>التسجيل</h4>
+                <p>تعبئة النماذج و تقديم معلوماتك الاساسيه</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-stethoscope"></i>
+                <h4>الفحص الطبي</h4>
+                <p>فحص ضغط الدم، الهيموجلوبين وصحتك العامة</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-droplet"></i>
+                <h4>التبرع</h4>
+                <p>عملية التبرع الفعلية وتستغرق 10-15 دقيقة</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h4>الراحة</h4>
+                <p>استراحة قصيرة وتناول وجبة خفيفة</p>
+            </div>
+            <div class="btn">
+                <button>كن متبرع</button>
+            </div>
+        </div>
+    </div>
+    <!-- End How Donor -->
+    <!-- Start Request form Method -->
+    <div class="request-container">
+        <div class="container">
+            <div class="req-method">
+                <h2>طلب دم عاجل</h2>
+                <form method="post" id="my-form">
+                    <div class="form-group">
+                        <label for="blood-type">فصيلة الدم</label>
+                        <select id="blood-type" name="blood" required>
+                            <option value="">اختر فصيلة الدم</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hospital">المستشفى</label>
+                        <input type="text" id="hospital" name="hospital" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">المدينة</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">رقم التواصل</label>
+                        <input type="tel" id="contact" name="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">تفاصيل إضافية</label>
+                        <textarea id="details" name="details" rows="3"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="btn-primary">إرسال الطلب</button>
+                    </div>
+                </form>
+            </div>
+            <div class="requests">
+                <h2>طلبات عاجلة</h2>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+                <div class="req">
+                    <span>A+</span>
+                    <div class="det">
+                        <h4>مسشفى دمياط العام</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>دمياط : كورنيش النيل خلف مبنى المحافظة </p>
+                        <p><i class="fa-solid fa-phone-flip"></i>01032707080</p>
+                        <p><i class="fa-solid fa-clock"></i>مطلوب قبل 4 ساعات</p>
+                    </div>
+                    <button>ساعد الآن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Request form Method -->
+    <div class="clear-box"></div>
+    <!-- Start contact us -->
+    <div class="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <p>نحن هنا لمساعدتك في اي استفسار او طلب دم عاجل</p>
+            <div class="info-us">
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>العنوان</h4>
+                    <p>دمياط ، كورنيش النيل</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <h4>الهاتف</h4>
+                    <p>0572328982</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>البريد الالكتروني</h4>
+                    <p>bloodbank@gmail.com</p>
+                </div>
+            </div>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.037474956869!2d31.80078805079039!3d31.437539953615246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f9e55b24eeab97%3A0xe38a761cd37d98e4!2z2KjZhtmDINin2YTYr9mFINin2YTYsdim2YrYs9mK!5e0!3m2!1sar!2seg!4v1752928383243!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- End contact us -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
